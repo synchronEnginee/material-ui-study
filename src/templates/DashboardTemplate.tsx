@@ -8,13 +8,11 @@ export interface DashboardTemplateProps {
 const DashboardTemplate: React.FC<DashboardTemplateProps> = ({
   children,
   title,
-}) => {
-  return (
-    <div>
-      <h1>{title}</h1>
-      <div>{children}</div>
-    </div>
-  );
-};
+}) => (
+  <>
+    <h1>{title}</h1>
+    <div>{children}</div>
+  </>
+);
 
 export default DashboardTemplate;
